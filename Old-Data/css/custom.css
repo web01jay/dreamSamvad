@@ -1,64 +1,9 @@
 /*================================= comoon css =================================*/
-
 body {
 	font-family: "Josefin Sans";
 	background-color: #121212;
 	touch-action: manipulation;
 	background-image: url('images/moon.png')
-}
-.breadcrumbs{
-	background-image: url(../images/slide-1.png);
-    background-size: cover;
-	padding: 150px 0px !important;
-	-webkit-animation: breath 8s ease-in-out alternate infinite;
-    -moz-animation: breath 8s ease-in-out alternate infinite;
-    animation: breath 8s ease-in-out alternate infinite;
-}
-input:placeholder-shown ~ .form-control-placeholder, 
-textarea:placeholder-shown ~ .form-control-placeholder{
-    top: 5px;
-     color: #ababab;
-     font-size: 15px;
-     font-weight: 400;
-	 margin-bottom: 0;
-	 font-family: "Josefin Sans";
-}
- input ~ .form-control-placeholder, 
- .form-control:focus ~ .form-control-placeholder, 
- textarea ~ .form-control-placeholder, 
- textarea.form-control:focus ~ .form-control-placeholder {
-    position: absolute;
-     transition: all 0.2s linear;
-     -webkit-transition: all 0.2s linear;
-     -moz-transition: all 0.2s linear;
-     -o-transition: all 0.2s linear;
-     top:-15px;
-     font-size: 13px;
-     margin-left: 0;
-     color: #D8B069;
-	 font-weight: 400;
-	 text-transform: capitalize;
-	 font-family: "Josefin Sans";
-}
-.form-control{
-	background-color: transparent;
-	box-shadow: none;
-	border: none;
-	box-shadow: none;
-	border-bottom: 1px solid #e1e1e1;
-	color: #fff !important;
-	font-family: "Josefin Sans";
-	border-radius: 0px !important;
-	padding-left: 0;
-}
-button.btn-from {
-    background: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-.border-btn:hover{
-	background-color: #D8B069 !important;
-	color:#fff !important;
 }
 /* .dropdown-menu{
 	display: block;
@@ -84,7 +29,7 @@ body, a, p, button, .primary-font {
 .listed-all-pages.section-spacer ul li a {
     color: #fff !important;
 }
-.secondary-font, h4, ul li{
+.secondary-font, h4{
 	font-family: "Playfair Display";
 }
 /*================================= theme colors and font family boldness class start =================================*/
@@ -98,16 +43,13 @@ body, a, p, button, .primary-font {
 .content-wrapper{
 	overflow: hidden;
 }
-ul {
-    padding: 0px 20px;
-}
 .play-font-medium{
 	font-weight:600;
 }
 .play-font-normal{
 	font-weight:normal;
 }
-.text-light, ul li{
+.text-light{
 	color: #ababab !important;
 	font-style: normal;
 }
@@ -117,8 +59,8 @@ ul {
 .bg-light-black{
 	background-color:#191919;
 }
-.text-orenge, .social-menu a:hover, .services-detail i:before{
-	color:#D8B069 !important;
+.text-orenge, .social-menu a:hover{
+	color:#D8B069;
 }
 .text-light, .social-menu a{
 	color: #ababab;
@@ -288,7 +230,7 @@ a.book-appointment {
 	box-shadow: 0 0px 4px 	0px rgba(0, 0, 0, 0.18);
 	background-color: #fff !important;
 }
-.btn-link, button.navbar-toggler i:before, .search-box .form-control, .season-btn.selected, .team-contact i:before, .contact-other-detail i:before{
+.btn-link, button.navbar-toggler i:before, .search-box .form-control, .season-btn.selected{
 	color:#fff !important;
 }
 .poster-login {
@@ -335,12 +277,9 @@ a:hover, button, button:hover {
 	font-size: 14px;
   }
 /*================================= 4 Global Styles (#glob) =================================*/
-p, .icon-arrow i:before, .contact-other-detail a{
+p, .icon-arrow i:before{
 	font-size: 15px;
     line-height: 25px;
-}
-.team-contact i:before{
-	font-size: 15px;	
 }
 .text-medium, a, .video-icon i:before{
 	font-size:18px;
@@ -363,7 +302,7 @@ h1, .font-heading {
     font-family: "Playfair Display";
     font-weight: 600;
 }
-h2, .services-detail h6 {
+h2 {
 	font-family: "Josefin Sans";
     font-weight: 600;
     font-size: 18px;
@@ -371,9 +310,6 @@ h2, .services-detail h6 {
     letter-spacing: 5px;
     text-transform: uppercase;
     position: relative;
-}
-.services-detail h6{
-	font-size: 16px;
 }
 h3 {
 	font-size: 48px;
@@ -391,8 +327,7 @@ h5{
     font-weight:600;
 }
 h6, .font-large, h2.heading, h2.heading i:before{
-	font-size:40px;
-	font-family: "Playfair Display";
+	font-size:18px;
 }
 button {
     cursor: pointer;
@@ -1116,8 +1051,7 @@ label[for="file-upload"] {
     font-size: 14px;
     padding: 16px 50px;
     font-weight: 700;
-	border: 1px solid #727271;
-	font-family: "Josefin Sans";
+    border: 1px solid #727271;
 }
 /* video animate */
 .videoWrapper {
@@ -1251,67 +1185,6 @@ button.navbar-toggler.collapsed.jb_front_nav_close i:before {
     position: relative;
     right: -12px;
 }
-img.about-text-image {
-    width: 23%;
-}
-.team-contact i {
-    background: #D8B069;
-        margin: 0px 5px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.team-contact i:before{
-	margin:0px;
-}
-.team-contact {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translate(-50%, -10%);
-}
-.team-inner-content h6{
-	font-size:18px;
-}
-.team-inner-content img {
-    height: 450px;
-    object-fit: cover;
-}
-.contact-other-detail i:before {
-	font-size: 15px;
-	background: #d8b069;
-	width: 30px !important;
-	display: flex;
-	height: 30px;
-	border-radius: 50%;
-	justify-content: center;
-	align-items: center;
-	font-weight: 600;
-	margin-left: 0;
-}
-.middle-col-border:after {
-    content: "";
-    background: #D8B069;
-    width: 2px !important;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-img.section-left-img.bottom-left-img.w-100 {
-    bottom: auto !important;
-    top: auto;
-}
-.bottom-right-img {
-    bottom: 0;
-    top: auto !important;
-}
-.services-detail i:before{
-	font-size:80px;
-}
 /*================================= second-header css start =================================*/
 /*=================================== media query css ===================================*/
 
@@ -1319,9 +1192,7 @@ img.section-left-img.bottom-left-img.w-100 {
 	.section-we-are.bg-black.section-spacer:after{
 		height: 80px;
 	}
-	.breadcrumbs{
-		padding: 100px 0px !important;
-	}
+
 	p, span, a,
 	a:hover, button, button:hover, .text-medium, a, .video-icon i:before{
 		font-size: 13px;
@@ -1366,7 +1237,7 @@ img.section-left-img.bottom-left-img.w-100 {
     }
     button.navbar-toggler.collapsed.jb_front_nav_close{
 		right: 10px;
-		top: 12px;
+		top: -1px;
     }
 	.btn-login, .btn-yellow{
 		font-size: 13px;
@@ -1440,19 +1311,12 @@ img.section-left-img.bottom-left-img.w-100 {
 	    width: 100%;
 		padding: 8px;
 	}
-
 	
 
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
 	.sticky .custom-logo, .custom-logo{
 		    width: 90px !important;
-	}
-	.contact-other-detail {
-		margin-top: 80px;
-	}
-	.breadcrumbs{
-		padding: 100px 0px !important;
 	}
 	h1 {
 		font-size: 25px !important;
@@ -1554,27 +1418,6 @@ img.section-left-img.bottom-left-img.w-100 {
 	.player-pro-img{height: 90px; width: 90px;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	#navbar-navigation {
-		position: fixed;
-		top: 0;
-		left: 0px;
-		z-index: 9999;
-		width: 100%;
-		height: 100%;
-		background-color: #121212;
-		overflow: hidden;
-		right: 0px;
-	}
-	.navbar-brand {
-		padding: 10px 0px;
-		position: relative;
-		z-index: 99999;
-	}
-	ul.nav.navbar-nav {
-		align-items: baseline !important;
-		margin-top: 85px;
-		padding: 15px !important;
-	}
     h2 {
         font-size: 30px;
 	}
