@@ -1312,6 +1312,37 @@ img.section-left-img.bottom-left-img.w-100 {
 .services-detail i:before{
 	font-size:80px;
 }
+.video-bg{
+	height: 100vh;
+	width: 100vw ;
+	object-fit: cover;
+}
+.video-item::before{
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.80);
+	z-index: 2;
+}
+.slider-content{
+	z-index: 10;
+}
+.playPause-label{
+	padding: 10px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	height: 50px;
+	width: 50px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.playPause-label i::before{
+	margin-left: 0 !important;
+}
 /*================================= second-header css start =================================*/
 /*=================================== media query css ===================================*/
 
@@ -1552,6 +1583,9 @@ img.section-left-img.bottom-left-img.w-100 {
 	}
 	.team-listing-section img.rank-flag-img{border-radius: 3px;  height:30px; width:40px;}
 	.player-pro-img{height: 90px; width: 90px;}
+	.cursor{
+		display: none !important;
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	#navbar-navigation {
@@ -1636,6 +1670,9 @@ img.section-left-img.bottom-left-img.w-100 {
 	}
 	.team-listing-section img.rank-flag-img{border-radius: 3px;  height:35px; width:45px;}
 	.player-pro-img{height: 100px; width: 100px;}
+	.cursor{
+		display: none !important;
+	}
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
 	.right-panel-tab ul li .nav-link {
