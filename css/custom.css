@@ -1103,7 +1103,7 @@ label[for="file-upload"] {
 	height:auto !important
 }
 .image-text {
-   	width: 100px !important;
+   	width: 250px !important;
     object-fit: contain !important;
     position: relative;
     top: 17px;
@@ -1491,7 +1491,7 @@ img.section-left-img.bottom-left-img.w-100 {
     }
     .image-text{
 		    top: 6px;
-    width: 70px !important;
+    width: 150px !important;
 	}
 
     h2 {
